@@ -117,10 +117,16 @@ footer {
 button {
     background-color: transparent;
     border: none;
+    
+}
+
+button:active {
+    transform: translateY(4px);
 }
 
 footer img {
     width: 50px;
+    
 }
 
 /* Overlay + Modal */
@@ -171,4 +177,21 @@ footer img {
     font-weight: 500;
     font-size: 18px;
     border-top: 1px solid #CCCCCC;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
