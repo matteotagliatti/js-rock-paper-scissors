@@ -13,12 +13,22 @@
         <h1>Rock Paper Scissor</h1>
     </header>
 
-    <div>
-        <p id="resultInfo">Score</p>
+    <div class="container">
+        <div class="vs">
+            <p id="playerChoice"><img src="img/placeholder.png"></p>
+            <p>VS.</p>
+            <p id="computerChoice"><img src="img/placeholder.png"></p>
+        </div>
+        <div class="round">
+            <p id="resultInfo">Round winner:</p>
+        </div>
     </div>
+    
         
     <div class="results">
-        <p id="finalResult">The first to reach 5 wins</p>
+        <div class="wins">
+            <p>The first to reach 5 wins</p>
+        </div>
         <div class="scores">
             <p id="playerScore">Player: 0</p>
             <hr>
@@ -31,6 +41,16 @@
         <button id="paperBtn"><img src="img/paper.png"></button>
         <button id="scissorsBtn"><img src="img/scissors.png"></button>
     </footer>
+
+    <!-- Overlay + Modal -->
+    <div id="overlay" class="hid"></div>
+    <div id="modal" class="hid">
+        <div class="inner">
+            <p id="finalResult" class="title">Title</p>
+            <p class="message">Try again?</p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
