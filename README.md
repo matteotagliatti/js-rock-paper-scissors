@@ -4,8 +4,6 @@ A rock, paper, scissor game for the [The Odin Project](https://www.theodinprojec
 
 The design is made with [Figma](https://figma.com/) with a *Mobile First* approach.
 
-👉 Live Demo (view it on Mobile)
-
 ## To-do
 
 - [ ] Modal open transition
